@@ -15,16 +15,16 @@ class CreateAbkTable extends Migration
     {
         Schema::create('abk', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->integer('unit_kerja_id');
-            $table->string('ikhtisar_jabatan');
-            $table->text('uraian_tugas');
-            $table->string('satuan_hasil');
-            $table->integer('waktu_pengerjaan');
-            $table->integer('waktu_penyelesaian');
-            $table->integer('beban_kerja');
-            $table->integer('pegawai');
-            $table->integer('jumlah');
+            $table->integer('user_id')->nullable();;
+            $table->integer('unit_kerja_id')->nullable();
+            $table->string('ikhtisar_jabatan')->nullable();;
+            $table->text('uraian_tugas')->nullable();;
+            $table->string('satuan_hasil')->nullable();;
+            $table->integer('waktu_pengerjaan')->nullable();;
+            $table->integer('waktu_penyelesaian')->nullable();;
+            $table->integer('beban_kerja')->nullable();;
+            $table->integer('jumlah')->nullable();;
+            
             $table->timestamps();
         });
     }
