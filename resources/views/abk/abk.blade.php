@@ -5,6 +5,7 @@
     </x-slot>
 
     <form method="POST" action="{{ route('abk.save') }}">
+        
         @csrf
     <div class="py-12">
         <div class="max-w-9xl mx-auto sm:px-6 lg:px-8">
